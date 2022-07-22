@@ -18,5 +18,8 @@ fun Application.routingConfigure(){
         get("/users") {
             call.respond(InMemoryCache.users)
         }
+        get {
+            call.respond("Hello Dagestan")
+        }
     }
 }
